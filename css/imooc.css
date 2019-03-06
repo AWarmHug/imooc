@@ -1,0 +1,732 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f8fafc;
+    width: 1280px;
+    position: relative;
+    font: 14px/1.5 "PingFang SC", "微软雅黑", "Microsoft YaHei", Helvetica, "Helvetica Neue", Tahoma, Arial, sans-serif;
+}
+
+.header_container {
+    width: 100%;
+    height: 72px;
+}
+
+a#logo {
+    display: inline-block;
+    float: left;
+}
+
+img.logo {
+    width: 140px;
+    height: 72px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul#course {
+    float: left;
+    line-height: 72px;
+    list-style: none;
+}
+
+li.course_item {
+    float: left;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+a.course_item_a {
+    color: #4a4a4a;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+a.course_item_a:hover {
+    color: black;
+    font-size: 17px;
+}
+
+#search {
+    float: left;
+    width: 180px;
+    height: 72px;
+    line-height: 72px;
+    position: relative;
+}
+
+
+#search span {
+
+    background: #f3f5f7;
+    padding: 2px 8px 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.search_bt {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    padding: 2px 8px;
+    bottom: 24px;
+    border-radius: 8px;
+}
+
+.search_bt:hover {
+    background: red;
+    color: white;
+}
+
+#header_right {
+    float: right;
+}
+
+#header_right a {
+    height: 72px;
+    line-height: 72px;
+    margin: 0 12px;
+}
+
+#header_right a {
+    color: #4a4a4a;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+#header_right a:hover {
+    color: red;
+    font-size: 17px;
+}
+
+
+#alarm {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+#alarm_img {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+}
+
+#header_img {
+    width: 48px;
+    height: 48px;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+#share {
+
+}
+
+.reaPacket {
+
+    display: inline-block;
+    width: 14px;
+    height: 16px;
+    vertical-align: text-top;
+    position: relative;
+    top: 2px;
+    margin-right: 8px;
+    background: url(//www.imooc.com/static/img/index/redPacket.png) no-repeat;
+    background-size: 100% 100%;
+    background-position: top center;
+    background-position-x: center;
+    background-position-y: top;
+}
+
+#shopping_cart {
+    border: 1px #4a4a4a;
+    border-radius: 8px;
+    padding: 8px 12px;
+}
+
+
+#cart:before {
+    content: url("../img/cart.png");
+}
+
+#cart:hover:before {
+    color: red;
+    content: url("../img/cart_red.png");
+}
+
+.banner {
+    height: 444px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.g-banner {
+    width: 1152px;
+    height: 444px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 12px 24px 0 rgba(7, 17, 27, 0.2);
+}
+
+.nav {
+    width: 216px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #2b333b;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    color: rgba(255, 255, 255, 0.6);
+    list-style: none;
+    font-size: 14px;
+    float: left;
+}
+
+.nav_item {
+    margin-left: 10px;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+}
+
+.nav > .nav_item:hover {
+    background: #929292;
+    color: white;
+}
+
+.banner-container {
+    background: gray;
+    float: left;
+    width: 936px;
+    height: 460px;
+    border-bottom-right-radius: 8px;
+}
+
+.nav-content {
+    width: 800px;
+    height: 460px;
+    position: absolute;
+    left: 276px;
+    background: red;
+    display: none;
+}
+
+li.nav_item:hover .nav-content {
+    display: block;
+}
+
+.banner-content {
+    background: red;
+    width: 100%;
+    height: 65%;
+    border-top-right-radius: 4px;
+}
+
+
+#bottom {
+    height: 35%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#bottom .bottom-item {
+    width: 220px;
+    display: inline;
+    margin-bottom: 0;
+    text-align: center;
+    transition: transform 0.5s;
+}
+
+
+#bottom .bottom-item:hover {
+    transform: translateY(-10px);
+}
+
+
+#bottom .bottom-item span {
+    display: block;
+    color: white;
+    font-size: 14px;
+}
+
+#bottom .bottom-item .title {
+    margin: 4px 0;
+}
+
+
+#bottom .bottom-item i {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background: url("https://www.imooc.com/static/img/index/new/path_new.png");
+    background-size: 100%;
+}
+
+#bottom .bottom-item .pic:nth-of-type(1) {
+    background-position: center 0px;
+}
+
+#bottom .bottom-item .pic:nth-of-type(2) {
+    background-position: center -72px;
+}
+
+#bottom .bottom-item .pic:nth-of-type(3) {
+    background-position: center -108px;
+}
+
+#bottom .bottom-item .pic:nth-of-type(4) {
+    background-position: center -36px;
+}
+
+.course-body {
+    clear: left;
+}
+
+
+.course-body-bgfff {
+    background-color: white;
+    box-shadow: 0px 10px 8px rgba(7, 17, 27, 0.06);
+}
+
+.course-body-bg000 {
+    box-shadow: 0px 10px 8px #f8fafc;
+}
+
+.course-container {
+    width: 1152px;
+    margin: 0 auto;
+    padding-top: 36px;
+    padding-bottom: 48px;
+}
+
+.type-combat {
+    text-align: center;
+}
+
+.type-title {
+    font-size: 14px;
+    line-height: 36px;
+}
+
+.type-title em {
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+    margin: 0 3px;
+    font-style: normal;
+}
+
+.type-title i {
+    display: inline-block;
+    width: 56px;
+    height: 36px;
+    background: url("https://www.imooc.com/static/img/index/icon.png") no-repeat;
+    background-size: 100%;
+    vertical-align: bottom;
+}
+
+.type-title .icon-left {
+    background-position: center 0;
+    margin-right: 8px;
+
+}
+
+
+.type-title .icon-right {
+    background-position: center -36px;
+    margin-left: 8px;
+}
+
+
+.course-list {
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.course-item {
+    width: 216px;
+    height: 252px;
+}
+
+.course-card {
+    display: block;
+}
+
+.course-pic-content {
+    width: 100%;
+    height: 120px;
+    position: relative;
+    color: white;
+}
+
+.course-pic {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.course-tag {
+    font-size: 12px;
+    border: 2px white solid;
+    background-color: #F02930;
+    position: absolute;
+    top: 8px;
+    left: -8px;
+    border-radius: 8px;
+    padding: 2px 4px;
+}
+
+.course-label {
+    position: absolute;
+    bottom: 12px;
+    left: 4px;
+    font-size: 10px;
+}
+
+.course-label span {
+    background-color: rgba(0, 0, 0, 0.29);
+    border-radius: 6px;
+    padding: 1px 4px;
+}
+
+.course-title {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 8px 0;
+}
+
+.course-info span {
+    margin-right: 8px;
+    font-size: 12px;
+    color: #93999F;
+}
+
+.course-info .header:before {
+    content: url("../img/header_student.png");
+}
+
+.course-info .course-star {
+    margin-right: 0;
+    line-height: 24px;
+    font-size: 0px;
+}
+
+.course-info .star-on {
+    font-size: 12px;
+    margin: 0;
+    line-height: 1;
+    font-style: normal;
+    padding: 0;
+    font-family: 'icomoon', serif !important;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+.course-info .star-on:before {
+
+    content: url("../img/star.png");
+}
+
+.course-price {
+    margin-top: 4px;
+}
+
+.course-price span {
+    color: #F01414;
+    margin-right: 4px;
+    font-size: 12px;
+}
+
+.course-price .course-discount {
+    background-color: rgba(240, 20, 20, 0.13);
+    padding: 0 2px;
+}
+
+.course-price .course-share {
+    background-color: #FF6D00;
+    color: white;
+    padding: 0 4px;
+    border-radius: 2px;
+}
+
+.question-list {
+    column-count: 3;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    column-fill: revert;
+    list-style: none;
+    cursor: pointer;
+    margin-top: 24px;
+}
+
+.article-item {
+    break-inside: avoid;
+    box-shadow: 4px 2px 4px rgba(7, 17, 27, 0.06);
+    transition: box-shadow 1s;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.article-item:hover {
+    box-shadow: 6px 3px 4px rgba(7, 17, 27, 0.16);
+}
+
+.article-item > div {
+    margin-bottom: 8px;
+}
+
+.article-container {
+    overflow: hidden;
+    padding: 24px 28px;
+
+}
+
+.article-content {
+    overflow: hidden;
+}
+
+
+.hot-type {
+    display: inline-block;
+    background-color: rgba(0, 180, 60, 0.5);
+    padding: 1px 12px;
+    font-size: 12px;
+    border-radius: 12px;
+    color: white;
+}
+
+.article-type {
+    display: inline-block;
+    padding: 1px 12px;
+    font-size: 12px;
+    color: rgba(0, 139, 199, 0.6);
+    line-height: 12px;
+}
+
+.article-type:before {
+    content: url("../img/article.png");
+}
+
+.question-type {
+    display: inline-block;
+    padding: 1px 12px;
+    font-size: 12px;
+    color: rgba(0, 180, 60, 0.6);
+    line-height: 12px;
+}
+
+.question-type:before {
+    content: url("../img/question_smail.png");
+}
+
+.green {
+    color: rgba(0, 180, 60, 0.6);
+    font-size: 16px;
+    transition: color 1s;
+}
+
+.green:hover {
+    color: rgba(0, 180, 60, 1);;
+}
+
+.black-blue {
+    color: #07111B;
+    font-size: 16px;
+    transition: color 1s;
+}
+
+.black-blue:hover {
+    color: rgba(0, 140, 200, 1);
+}
+
+.black-green {
+    color: #4D555D;
+    font-size: 14px;
+    transition: color 1s;
+}
+
+.black-green:hover {
+    color: rgba(0, 180, 60, 1);;
+}
+
+.past-container {
+    overflow: hidden;
+}
+
+.question-title {
+    font-size: 14px;
+    margin-top: 8px;
+    height: 72px;
+    line-height: 24px;
+}
+
+.article-title {
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.question-title-text {
+}
+
+.question-title-pic {
+    width: 72px;
+    height: 72px;
+    float: right;
+    border-radius: 8px;
+    margin-left: 8px;
+}
+
+.article-title-pic {
+    width: 72px;
+    height: 48px;
+    float: right;
+    border-radius: 8px;
+}
+
+.text-item-content {
+    font-size: 12px;
+    line-height: 24px;
+    color: #4D555D;
+    margin-top: 8px;
+    clear: both;
+}
+
+.text-item-more {
+    font-size: 12px;
+    line-height: 24px;
+    float: right;
+    text-decoration: none;
+}
+
+.text-item-more:after {
+    content: url("../img/to-right.png");
+}
+
+.notes-bottom-info {
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 24px;
+    margin-top: 8px;
+    color: #93999F;
+}
+
+.notes-bottom-info span:nth-of-type(2) {
+    margin-left: 14px;
+}
+
+
+.dividing-line {
+    position: relative;
+    height: 1px;
+    background-color: #D9DDE1;
+    margin: 24px 0;
+    background-size: cover;
+    font-weight: 400;
+}
+
+.dividing-line span {
+    position: absolute;
+    background-color: white;
+    font-size: 12px;
+    color: #93999F;
+    padding-right: 8px;
+    top: -8px;
+}
+
+
+.hot-teacher {
+    width: 100%;
+    height: 408px;
+    background-size: cover;
+    background: red url("https://www.imooc.com/static/img/index/eliteTbg.jpg") no-repeat center center;
+}
+
+.hot-teacher-container {
+    width: 1152px;
+    margin: 0 auto;
+    overflow:hidden;
+    /*padding: 32px 0;*/
+}
+
+.hot-teacher .icon-left {
+    background-position: center -432px;
+    margin-right: 8px;
+}
+
+
+.hot-teacher .icon-right {
+    background-position: center -468px;
+    margin-left: 8px;
+}
+
+
+.hot-teacher .type-title  {
+    color: white;
+}
+
+.hot-teacher .type-title em {
+    color: white;
+}
+
+
+.teacher-content{
+    margin-top: 24px;
+}
+.teacher-item {
+    float: left;
+    width: 216px;
+    height: 248px;
+    margin-right: 18px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.8);
+    border: 12px;
+}
+.teacher-item:last-child{
+    margin-right: unset;
+}
+
+
+
+
+
+
+
+
+
+
+.ad-fixed {
+    position: fixed;
+    z-index: 4;
+    right: 0px;
+    top: 50%;
+}
+
+
+.ad-pic {
+    width: 128px;
+    height: 128px;
+    background: url("https://www.imooc.com/static/img/act/lottery-float.png");
+
+}
