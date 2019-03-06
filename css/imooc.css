@@ -5,9 +5,30 @@
 
 body {
     background-color: #f8fafc;
-    width: 1280px;
+    min-width: 1200px;
+    margin: 0 auto;
     position: relative;
     font: 14px/1.5 "PingFang SC", "微软雅黑", "Microsoft YaHei", Helvetica, "Helvetica Neue", Tahoma, Arial, sans-serif;
+}
+
+.clearfix:after {
+    content: '\0020';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.ad-header {
+    display: block;
+    width: 100%;
+    height: 38px;
+    background: #F01414 url("https://www.imooc.com/static/img/act/lottery-top.png") no-repeat;
+    z-index: 999;
+}
+
+.header-border {
+    border-radius: 50%;
 }
 
 .header_container {
@@ -27,6 +48,10 @@ img.logo {
 
 ul {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 ul#course {
@@ -658,15 +683,15 @@ li.nav_item:hover .nav-content {
 
 .hot-teacher {
     width: 100%;
-    height: 408px;
+    padding: 32px 0 48px;
     background-size: cover;
-    background: red url("https://www.imooc.com/static/img/index/eliteTbg.jpg") no-repeat center center;
+    background: url("https://www.imooc.com/static/img/index/eliteTbg.jpg") no-repeat center center;
 }
 
 .hot-teacher-container {
     width: 1152px;
     margin: 0 auto;
-    overflow:hidden;
+    overflow: hidden;
     /*padding: 32px 0;*/
 }
 
@@ -682,7 +707,7 @@ li.nav_item:hover .nav-content {
 }
 
 
-.hot-teacher .type-title  {
+.hot-teacher .type-title {
     color: white;
 }
 
@@ -691,30 +716,284 @@ li.nav_item:hover .nav-content {
 }
 
 
-.teacher-content{
+.teacher-content {
     margin-top: 24px;
 }
+
 .teacher-item {
+    position: relative;
     float: left;
     width: 216px;
     height: 248px;
     margin-right: 18px;
     box-sizing: border-box;
-    background: rgba(255, 255, 255, 0.8);
-    border: 12px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    border-radius: 12px;
+    transition: all 0.5s;
 }
-.teacher-item:last-child{
+
+
+.teacher-item:last-child {
     margin-right: unset;
 }
 
+.teacher-item:hover {
+    background-color: rgba(255, 255, 255, 1);;
+}
 
 
+.teacher-header {
+    width: 96px;
+    height: 96px;
+    position: absolute;
+    border-radius: 48px;
+    left: 50%;
+    margin-left: -48px;
+    margin-top: -16px;
+
+}
 
 
+.teacher-item span {
+    font-size: 12px;
+    text-align: center;
+    color: #4D555D;
+    clear: both;
+    display: block;
+}
+
+.teacher-item span:nth-of-type(1) {
+    font: 16px "Trebuchet MS";
+    color: #07111b;
+    margin-top: 90px;
+}
+
+.teacher-item span:nth-of-type(2) {
+    margin: 8px 0;
+}
+
+.teacher-item span:nth-of-type(3) {
+    text-overflow: clip;
+    word-wrap: break-word;
+    word-break: break-word;
+    text-align: justify;
+    padding: 0 36px;
+    height: 72px;
+    line-height: 24px;
+    overflow: hidden;
+}
 
 
+.hot-student {
+    margin: 32px 0;
+    box-shadow: 6px 3px 4px rgba(7, 17, 27, 0.16);
+    overflow: hidden;
+
+}
+
+.hot-teacher .icon-left {
+    background-position: center -504px;
+    margin-right: 8px;
+}
 
 
+.hot-teacher .icon-right {
+    background-position: center -540px;
+    margin-left: 8px;
+}
+
+.student-container {
+    overflow: hidden;
+
+}
+
+.student-star-list {
+    width: 544px;
+    margin: 32px auto;
+}
+
+.student-star-list dd {
+    width: 136px;
+    float: left;
+}
+
+.student-star-list .star-item {
+    text-align: center;
+}
+
+.student-star-list .star-item .header {
+    display: inline-block;
+    position: relative;
+}
+
+.student-star-list .star-item .header .header-pic {
+    width: 56px;
+    height: 56px;
+    box-shadow: 6px 3px 4px rgba(7, 17, 27, 0.16);
+}
+
+
+.student-star-list .star-item .header .purple {
+    width: 26px;
+    height: 18px;
+    position: absolute;
+    top: -16px;
+    left: 16px;
+    background-size: 100%;
+    background: url("../img/crown.png") no-repeat center 0;
+}
+
+.student-star-list .star-item span:nth-of-type(1) {
+    color: #07111B;
+    font-size: 14px;
+}
+
+.student-star-list .star-item span:nth-of-type(2) {
+    color: #93999F;
+    font-size: 12px;
+}
+
+.student-other-list {
+    width: 888px;
+    margin: 0 auto;
+}
+
+.student-other-list dd {
+    box-sizing: border-box;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    border-radius: 48px;
+    position: relative;
+    float: left;
+}
+
+.student-other-list .header {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.student-other-list .header .header-pic {
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+    background-color: #f3f5f7;
+    border: 2px solid #fff;
+    transition: border 1s;
+}
+
+
+.student-other-list .header:hover .header-pic {
+    border-radius: 48px;
+    border: #653ddd 2px solid;
+}
+
+.student-other-list .header:hover .header-info {
+    display: block;
+}
+
+
+.header-info {
+    display: none;
+    position: absolute;
+    width: 120px;
+    top: -120%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.header-info p {
+    text-align: center;
+    background-color: #653ddd;
+    color: white;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+
+.bottom {
+    margin: 32px 48px;
+}
+
+.bottom .other-link-list {
+    list-style: none;
+
+}
+
+.bottom div:nth-of-type(1) {
+    display: inline-block;
+
+}
+
+.bottom .other-link-list li {
+    float: left;
+    line-height: 24px;
+}
+
+.bottom .other-link-list li a {
+    color: #93999F;
+    margin-right: 12px;
+}
+
+.bottom .other-link-list li a:hover {
+    color: #07111B;
+}
+
+.bottom .filing {
+    line-height: 24px;
+    font-size: 12px;
+    color: #93999F;
+}
+
+.bottom .right {
+    float: right;
+}
+
+.bottom .right .item {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.bottom .right .item:nth-of-type(1) {
+    margin-right: 12px;
+}
+
+.bottom .right a {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+}
+
+.bottom .right .wechat {
+    position: relative;
+    background: url("https://www.imooc.com/static/img/idx-btm.png") no-repeat;
+    background-position: -52px -221px;
+}
+
+
+.bottom .right .wechat-icon {
+    display: none;
+    width: 120px;
+    height: 120px;
+    background-color: #2b333b;
+    position: absolute;
+    top: -135px;
+    left: -44px;
+
+
+}
+
+.bottom .right .wechat:hover .wechat-icon {
+    display: block;
+}
+
+
+.bottom .right .sina {
+    background: url("https://www.imooc.com/static/img/idx-btm.png") no-repeat;
+    background-position: 0 -221px;
+}
 
 .ad-fixed {
     position: fixed;
